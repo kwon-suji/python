@@ -3,13 +3,13 @@ N,M=map(int, input().split())
 a,b,d=map(int, input().split())
 cnt=1
 
-#ÀÌÁß¹è¿­ ÀÔ·Â¹Þ±â
+#ï¿½ï¿½ï¿½ß¹è¿­ ï¿½Ô·Â¹Þ±ï¿½
 s=[0 for i in range(M)]
 for j in range(M):
     s[j]=list(map(int, input().split()))
 
 #step=(a,b)=(ud,lr)
-#¹æÇâ¿¡ µû¸¥ ÀÌµ¿°ª
+#ï¿½ï¿½ï¿½â¿¡ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½
 if d==0:
     steps=[(0,-1),(1,0),(0,1),(-1,0)]
 elif d==1:
@@ -23,7 +23,7 @@ elif d==3:
 k=0
 
 s[a][b]==1
-print("Ã³À½ a,b=",a,b)
+print("Ã³ï¿½ï¿½ a,b=",a,b)
 for i in range(4):
 for step in steps:
     UD=a+step[0]
@@ -33,7 +33,7 @@ for step in steps:
         s[UD][LR]==1
         a=UD
         b=LR
-        print("¹Ù²ï°Å a,b=",a,b)
+        print("ï¿½Ù²ï¿½ï¿½ a,b=",a,b)
     
         d=3-k+d
         print("d=",d)
