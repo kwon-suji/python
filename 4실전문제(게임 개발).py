@@ -49,4 +49,4 @@ for step in steps:
     else:
         k+=1
 print(cnt)
-print("수정")
+print("수정ㅣ")
